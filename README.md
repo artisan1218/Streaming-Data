@@ -18,7 +18,7 @@ FM algorithm estimate the number of unique cities within a window in the data st
 
 Multiple hash functions are used to improve the estimation accuracy. The standard way to do this is shown below
 
-![image](https://user-images.githubusercontent.com/25105806/115946555-e0d3b880-a476-11eb-85ee-de058cac7109.png)
+<img src="https://user-images.githubusercontent.com/25105806/115946555-e0d3b880-a476-11eb-85ee-de058cac7109.png" width="40%" height="40%">
 
 But for simplicity, instead of using kmeans to group multiple estimation result, I manually set a number of group to simulate the grouping process, turns out this solution works.
 
@@ -36,7 +36,8 @@ This implementation uses Twitter API of streaming to implement the fixed size sa
 Assuming that the memory can only save 100 tweets, we need to use the fixed size sampling method to only keep part of the tweets as a sample in the streaming.
 
 The idea of Reservoir Sampling is to keep a fixed size sample to work with, and either keep/replace existing element in the sample list with newly arrived element or discard the new element:
-![image](https://user-images.githubusercontent.com/25105806/115946731-07462380-a478-11eb-920e-752f8f526c0f.png)
+
+<img src="https://user-images.githubusercontent.com/25105806/115946731-07462380-a478-11eb-920e-752f8f526c0f.png" width="50%" height="50%">
 
 I only take tweets with hashtags into account when doing Reservoir Sampling, that is, the hashtag will be counted. 
 Newly arrived hashtag will be kept with the probability of 100/n, where n is the number of the newly arrived hashtag's index.

@@ -5,7 +5,7 @@ The Streaming data includes three algorithms: Bloom filtering, Flajolet-Martin a
 Bloom Filtering algorithm is to estimate whether the city of a business in business_second.json has shown before in business_first.json.
 I used the following hash function to hash the city name:
 
-<img src="https://user-images.githubusercontent.com/25105806/115946357-79693900-a475-11eb-806c-ffdcc8a2df24.png" width="20%" height="20%">
+<img src="https://user-images.githubusercontent.com/25105806/115946357-79693900-a475-11eb-806c-ffdcc8a2df24.png" width="17%" height="17%">
 
 where a, b is randomly picked large number, m is the length of bit array, which is just length of the bloom filter.
 Note: the representation of bloom filter is a not a list 1 or 0, but instead a set of indices of all 1's. This way we can save some spaces.

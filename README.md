@@ -13,8 +13,8 @@ Note: the representation of bloom filter is a not a list 1 or 0, but instead a s
 ### 2. Flajolet-Martin algorithm
 Uses generate_stream.jar to simulate the data stream to work with. The implementation listens to port number 9999 locally.
 FM algorithm estimate the number of unique cities within a window in the data stream by the following steps:
-![image](https://user-images.githubusercontent.com/25105806/115946523-9f430d80-a476-11eb-9770-1722c3a174e7.png)
-<img src="https://user-images.githubusercontent.com/25105806/115946523-9f430d80-a476-11eb-9770-1722c3a174e7.png" width="30%", height="20%">
+
+<img src="https://user-images.githubusercontent.com/25105806/115946523-9f430d80-a476-11eb-9770-1722c3a174e7.png" width="50%" height="50%">
 
 Multiple hash functions are used to improve the estimation accuracy. The standard way to do this is shown below
 

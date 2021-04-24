@@ -5,7 +5,7 @@ The Streaming data includes three algorithms: Bloom filtering, Flajolet-Martin a
 Bloom Filtering algorithm is to estimate whether the city of a business in business_second.json has shown before in business_first.json.
 I used the following hash function to hash the city name:
 
-![image](https://user-images.githubusercontent.com/25105806/115946357-79693900-a475-11eb-806c-ffdcc8a2df24.png)
+<img src="https://user-images.githubusercontent.com/25105806/115946357-79693900-a475-11eb-806c-ffdcc8a2df24.png" width="20%" height="20%">
 
 where a, b is randomly picked large number, m is the length of bit array, which is just length of the bloom filter.
 Note: the representation of bloom filter is a not a list 1 or 0, but instead a set of indices of all 1's. This way we can save some spaces.
@@ -14,6 +14,7 @@ Note: the representation of bloom filter is a not a list 1 or 0, but instead a s
 Uses generate_stream.jar to simulate the data stream to work with. The implementation listens to port number 9999 locally.
 FM algorithm estimate the number of unique cities within a window in the data stream by the following steps:
 ![image](https://user-images.githubusercontent.com/25105806/115946523-9f430d80-a476-11eb-9770-1722c3a174e7.png)
+<img src="https://user-images.githubusercontent.com/25105806/115946523-9f430d80-a476-11eb-9770-1722c3a174e7.png" width="30%", height="20%">
 
 Multiple hash functions are used to improve the estimation accuracy. The standard way to do this is shown below
 

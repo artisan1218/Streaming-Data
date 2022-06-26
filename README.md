@@ -1,6 +1,8 @@
 # Streaming Data Algorithm
 This repo includes three algorithms: Bloom filtering, Flajolet-Martin algorithm, and reservoir sampling
 
+<br />
+
 ### 1. Bloom Filter
 Bloom Filtering algorithm is to estimate whether the city of a business in business_second.json has shown before in business_first.json.
 I used the following hash function to hash the city name:
@@ -9,6 +11,8 @@ I used the following hash function to hash the city name:
 
 where a, b is randomly picked large number, m is the length of bit array, which is just length of the bloom filter.
 Note: the representation of bloom filter is a not a list 1 or 0, but instead a set of indices of all 1's. This way we can save some spaces.
+
+<br />
 
 ### 2. Flajolet-Martin algorithm
 Uses generate_stream.jar to simulate the data stream to work with. The implementation listens to port number 9999 locally.
@@ -29,6 +33,8 @@ Time                  Ground Truth  Estimation
 2021-04-23 14:46:33   42            50
 2021-04-23 14:48:46   62            59
 ```
+
+<br />
 
 ### 3. Reservoir Sampling/Fixed Size Sampling
 This implementation uses Twitter API of streaming to implement the fixed size sampling method (Reservoir Sampling Algorithm) and find popular tags with the top

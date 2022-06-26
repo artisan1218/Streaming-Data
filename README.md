@@ -1,5 +1,5 @@
-# Twitter Streaming Data
-The Streaming data includes three algorithms: Bloom filtering, Flajolet-Martin algorithm, and reservoir sampling
+# Streaming Data Algorithm
+This repo includes three algorithms: Bloom filtering, Flajolet-Martin algorithm, and reservoir sampling
 
 ### 1. Bloom Filter
 Bloom Filtering algorithm is to estimate whether the city of a business in business_second.json has shown before in business_first.json.
